@@ -17,4 +17,4 @@ _(Optional)_
 6.Assign the Elastic IP to the domain/sub-domain you wish by creating DNS records.
 
 
-> **Note**: Make sure you terminate and delete everything you created after CTF or else it will charge you.
+> **Note**: Make sure you terminate and delete everything you created after CTF or else it will charge you for nothing.
