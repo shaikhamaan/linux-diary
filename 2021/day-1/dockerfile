@@ -24,6 +24,16 @@ RUN echo "hfoewheiwhfihw893hfiwefwhewhiwgheghyewgewguewgew\nrhq89rh78qrg7q3g3gr3
 
 RUN echo "\n\nCongratulations, You are on right track :) \n\nFollow given steps to complete the task -> \n\n1.Use following string as str1 -> ILoveLinux\n2.Now, print current woking directory.\n3.Use this output as str2\n4.Concatinate str1 and str2(i.e. str1 + str2) \n5.Submit the resultant string in provided google form \n\nIf required always do take help of our best friend => Google :)\n\n\n\n\nGoogle Form Link : https://forms.gle/JaDCy5GRwWdcagz27 \n\n"> .itmaybehere03
 
+RUN sudo chmod 444 .itmaybehere00
+
+RUN sudo chmod 444 .itmaybehere01
+
+RUN sudo chmod 444 .itmaybehere02
+
+RUN sudo chmod 444 .itmaybehere03
+
+RUN sudo chmod 444 .itmaybehere04
+
 WORKDIR /home
 
 CMD ["/usr/sbin/sshd","-D"]
