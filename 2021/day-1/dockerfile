@@ -2,7 +2,9 @@ FROM ubuntu:latest
 
 RUN apt update && apt install  openssh-server sudo -y 
 
-RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 hacker 
+RUN adduser hacker 
+
+RUN echo 'root:iKD2YZmKB4' | chpasswd
 
 RUN  echo 'hacker:abcde' | chpasswd
 
@@ -10,9 +12,9 @@ RUN service ssh start
 
 EXPOSE 22
 
-RUN cd && mkdir /home/ubuntu/LinuxDiary2021
+RUN cd && mkdir /home/hacker/LinuxDiary2021
 
-WORKDIR  /home/ubuntu/LinuxDiary2021
+WORKDIR  /home/hacker/LinuxDiary2021
 
 RUN echo "r89ehg8reghre8gh89rehg89rehg8rehgrehg9erhg9hre9ghre9hgr98hg8hihioihiohoihihihhoihi 9hr89hrue78gugewf3fwg\njegh894h894h89gh89ehrg8h gr89hge89rhg89erhg89ehg89gh9r8egherhg89hehnoihihihihjihoihii ehgrfgrregreg egegewgegergkpok pokokpok okpokrgregregre9e8ghr89ehgrheg9rehgh84f894h">.itmaybehere00
 
