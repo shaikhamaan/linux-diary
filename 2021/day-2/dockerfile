@@ -20,5 +20,7 @@ RUN sudo chmod 444 ./-LinuxDiary2021.txt
 
 RUN echo "\n\n\n1) At Start You will be inside /home/hacker directory.\n2) There you will find a text file containing large number of lines \n3) The file contains all lines repeated at least once except one line\n4) You have to find line number of that line and submit it in below provided google form\n\n\nCommands/Concepts Required to complete Task -> cat , sort , uniq , grep , pipelining (concept) \n\n\nGoogle Form : https://forms.gle/tj52ed5KEnDEY1kW6\n\n\nGook Luck:)\n\n\nAuthor:Pavan Shinde" > README
 
+RUN sudo chmod 444 README
+
 CMD ["/usr/sbin/sshd","-D"]
 
