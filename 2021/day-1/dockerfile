@@ -38,6 +38,6 @@ RUN sudo chmod 444 .itmaybehere04
 
 WORKDIR /home
 
-RUN echo "\n\n\n1) At Start You will be inside /home directory.\n2) Go inside Only directory present inside /home directory.\n3) Again you will find a directory with name LinuxDiary2021 go inside that.\n4) Now, there you have to find the file containing some meaningful content , There you will get further instructions.\n\n\nPossible Commands required to complete task -> ls ,cd ,cat\n\n\n\nGood Luck :)" > README
+RUN echo "\n\n\n1) At Start You will be inside /home directory.\n2) Go inside Only directory present inside /home directory.\n3) Again you will find a directory with name LinuxDiary2021 go inside that.\n4) Now, there you have to find the file containing some meaningful content , There you will get further instructions.\n\n\nPossible Commands required to complete task -> ls ,cd ,cat\n\n\n\nGood Luck :)\n\n\nAuthor:Pavan Shinde" > README
 
 CMD ["/usr/sbin/sshd","-D"]
