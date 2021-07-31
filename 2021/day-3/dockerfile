@@ -16,7 +16,7 @@ WORKDIR /home/hacker
 
 RUN mkdir LinuxDiary2021
 
-RUN cd LinuxDiary2021
+WORKDIR /home/hacker/LinuxDiary2021
 
 RUN mkdir firstDIR
 
@@ -28,7 +28,7 @@ RUN mkdir forthDIR
 
 RUN mkdir fifthDIR
 
-RUN cd firstDIR
+WORKDIR /home/hacker/LinuxDiary2021/firstDIR
 
 RUN echo "grgegergergegggv gr rejj jjpwjfpjepjf wpjfpeojpp" > .itmaybehere00
 
@@ -50,7 +50,7 @@ RUN chmod 777 .itmaybehere00
 
 RUN chmod 574 .itmaybehere03
 
-RUN cd ../secondDIR
+WORKDIR /home/hacker/LinuxDiary2021//secondDIR
 
 RUN echo "Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system.[20] Because of the dominance of the Linux-based Android on smartphones, Linux also has the largest installed base of all general-purpose operating systems.[21][22][23][24] Although it is used by only around 2.3 percent of desktop computers,[25][26] the Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[27] Linux is the leading operating system on servers (over 96.4% of the top 1 million web servers' operating systems are Linux),[28] leads other big iron systems such as mainframe computers, and is the only OS used on TOP500 supercomputers (since November 2017, having gradually eliminated all competitors)" > .itmaybehere00
 
@@ -72,7 +72,7 @@ RUN chmod 777 .itmaybehere03
 
 RUN chmod 574 .itmaybehere04
 
-RUN cd ../thirdDIR
+WORKDIR /home/hacker/LinuxDiary2021/thirdDIR
 
 RUN echo "grgegergergegggv gr rejj jjpwjfpjepjf wpjfpeojpp" > .itmaybehere00
 
@@ -94,7 +94,7 @@ RUN chmod 777 .itmaybehere00
 
 RUN chmod 574 .itmaybehere01
 
-RUN cd ../forthDIR
+WORKDIR /home/hacker/LinuxDiary2021/forthDIR
 
 RUN echo "Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system.[20] Because of the dominance of the Linux-based Android on smartphones, Linux also has the largest installed base of all general-purpose operating systems.[21][22][23][24] Although it is used by only around 2.3 percent of desktop computers,[25][26] the Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.[27] Linux is the leading operating system on servers (over 96.4% of the top 1 million web servers' operating systems are Linux),[28] leads other big iron systems such as mainframe computers, and is the only OS used on TOP500 supercomputers (since November 2017, having gradually eliminated all competitors)" > .itmaybehere00
 
@@ -116,7 +116,7 @@ RUN chmod 777 .itmaybehere03
 
 RUN chmod 574 .itmaybehere04
 
-RUN cd ../fifthDIR
+WORKDIR /home/hacker/LinuxDiary2021/fifthDIR
 
 RUN echo "grgegergergegggv gr rejj jjpwjfpjepjf wpjfpeojpp" > .itmaybehere00
 
@@ -138,8 +138,8 @@ RUN chmod 777 .itmaybehere03
 
 RUN chmod 574 .itmaybehere02
 
-RUN cd ../
+WORKDIR /home/hacker/LinuxDiary2021/
 
-RUN echo "\n\n\n1) At Start You will be inside /LinuxDiary2021 directory.\n2) Now, here you have to find a file with following constraints\n     i.The file should be of size 367 Bytes \n     ii.The file have reading permission for anyone but , execution only for owner\n3) Find the file with given constraints, there you will get further instructions \n\n\nGook Luck:)\n\n\nAuthor:Pavan Shinde, Program Director WLUG" > README
+RUN echo "\n\n\n1) At Start You will be inside /home/hacker/LinuxDiary2021/ directory.\n2) Now, here you have to find a file with following constraints\n     i.The file should be of size 367 Bytes \n     ii.The file have reading permission for anyone but , execution only for owner\n3) Find the file with given constraints, there you will get further instructions \n\n\nGook Luck:)\n\n\nAuthor:Pavan Shinde, Program Director WLUG" > README
 
 CMD ["/usr/sbin/sshd","-D"]
